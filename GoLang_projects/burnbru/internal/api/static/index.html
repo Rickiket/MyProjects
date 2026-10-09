@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BurnBru — портфолио">
+  <meta name="theme-color" content="#f4f2ee">
+  <title>BurnBru</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="home" class="home-body">
+  <a class="skip-link" href="#main-content">К содержимому</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="BurnBru — на главную"><span>BurnBru</span><small>portfolio</small></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><span class="sr-only">Открыть меню</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <a class="header-home" href="/">Home</a>
+      <a href="/about/">About Me</a>
+      <a href="/gallery/">Portfolio</a>
+      <a href="/contacts/">Contacts</a>
+      <a href="/login/" data-account-link>Sign In</a>
+    </nav>
+  </header>
+  <main class="home-landing" id="main-content">
+    <section class="home-name" aria-label="BurnBru">
+      <h1>BurnBru</h1>
+      <span class="home-model">MODEL</span>
+    </section>
+    <section class="home-photo">
+      <img id="hero-image" alt=" " hidden>
+    </section>
+    <nav class="home-links" aria-label="Разделы сайта">
+      <a href="/about/">About Me <span aria-hidden="true">↗</span></a>
+      <a href="/gallery/">Portfolio <span aria-hidden="true">↗</span></a>
+      <a href="/contacts/">Contacts <span aria-hidden="true">↗</span></a>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <a class="brand" href="/"><span>BurnBru</span><small>portfolio</small></a>
+    <p>© <span data-year></span> Все права сохранены.</p>
+    <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1b2745" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">TIC TAC TOE</p>
+          <h1>Крестики-нолики</h1>
+          <p class="hero-copy">Войдите, сыграйте партию и посмотрите таблицу лидеров.</p>
+        </div>
+        <button id="sign-out-button" class="button ghost hidden" type="button">Выйти</button>
+      </header>
+
+      <p id="notice" class="notice" role="status" aria-live="polite"></p>
+
+      <section id="auth-section" class="auth-grid" aria-label="Авторизация">
+        <form id="sign-in-form" class="card form-card">
+          <h2>Вход</h2>
+          <label>Логин <input name="login" autocomplete="username" required /></label>
+          <label>Пароль <input name="password" type="password" autocomplete="current-password" required /></label>
+          <button class="button" type="submit">Войти</button>
+        </form>
+        <form id="sign-up-form" class="card form-card">
+          <h2>Новый игрок</h2>
+          <label>Логин <input name="login" autocomplete="username" required /></label>
+          <label>Пароль <input name="password" type="password" autocomplete="new-password" required /></label>
+          <button class="button secondary" type="submit">Зарегистрироваться</button>
+        </form>
+      </section>
+
+      <section id="app-section" class="hidden" aria-label="Игровая панель">
+        <div class="dashboard-grid">
+          <article class="card user-card">
+            <p class="eyebrow">МОЙ ПРОФИЛЬ</p>
+            <h2 id="user-login">—</h2>
+            <p id="user-id" class="muted">—</p>
+          </article>
+
+          <article class="card leaderboard-card">
+            <div class="card-heading">
+              <div>
+                <p class="eyebrow">РЕЙТИНГ</p>
+                <h2>Лидеры</h2>
+              </div>
+              <label class="limit-label">Показать
+                <select id="leaderboard-limit" aria-label="Количество игроков в рейтинге">
+                  <option value="5">5</option>
+                  <option value="10" selected>10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                </select>
+              </label>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>#</th><th>Игрок</th><th>Победы</th><th>Поражения</th><th>Ничьи</th><th>Коэффициент</th></tr></thead>
+                <tbody id="leaderboard-body"><tr><td colspan="6" class="muted">Загрузка…</td></tr></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <div class="game-grid">
+          <section class="card game-card">
+            <div class="card-heading">
+              <div>
+                <p class="eyebrow">ИГРА</p>
+                <h2 id="game-title">Новая партия</h2>
+              </div>
+              <button id="new-computer-game" class="button" type="button">Играть с компьютером</button>
+            </div>
+            <p id="game-status" class="game-status">Создайте игру с компьютером или подключитесь к открытой партии.</p>
+            <section id="lobby" class="lobby hidden" aria-live="polite" aria-label="Лобби игры">
+              <span class="lobby-dot" aria-hidden="true"></span>
+              <div>
+                <p id="lobby-title" class="lobby-title">Лобби</p>
+                <p id="lobby-details" class="muted">—</p>
+              </div>
+              <div class="lobby-id-wrap">
+                <code id="lobby-id" class="lobby-id">—</code>
+                <button id="copy-game-id" class="button ghost" type="button">Копировать UUID</button>
+              </div>
+            </section>
+            <div id="board" class="board" aria-label="Игровое поле"></div>
+            <div class="game-tools">
+              <label>UUID игры
+                <input id="game-id-input" placeholder="Вставьте UUID, чтобы открыть игру" />
+              </label>
+              <button id="load-game-button" class="button secondary" type="button">Открыть игру</button>
+            </div>
+          </section>
+
+          <section class="card open-games-card">
+            <div class="card-heading">
+              <div>
+                <p class="eyebrow">ИГРЫ С ИГРОКАМИ</p>
+                <h2>Открытые партии</h2>
+              </div>
+              <div class="button-pair">
+                <button id="new-player-game" class="button secondary" type="button">Создать</button>
+                <button id="refresh-games-button" class="button ghost" type="button">Обновить</button>
+              </div>
+            </div>
+            <p class="muted">Создайте партию и передайте её UUID сопернику, либо подключитесь к одной из ожидающих.</p>
+            <ul id="open-games-list" class="games-list"><li class="muted">Загрузка…</li></ul>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

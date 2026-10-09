@@ -1,0 +1,68 @@
+[
+ {
+  "Treasures": 18,
+  "CompletetLevels": 4,
+  "KilledEnemys": 16,
+  "CraversedCells": 1662,
+  "KicksForEnemys": 72,
+  "KicksForPlayer": 54,
+  "UsedFoods": 5,
+  "UsedElixirs": 1,
+  "UsedScrolls": 4
+ },
+ {
+  "Treasures": 17,
+  "CompletetLevels": 5,
+  "KilledEnemys": 14,
+  "CraversedCells": 1359,
+  "KicksForEnemys": 128,
+  "KicksForPlayer": 85,
+  "UsedFoods": 3,
+  "UsedElixirs": 5,
+  "UsedScrolls": 6
+ },
+ {
+  "Treasures": 7,
+  "CompletetLevels": 2,
+  "KilledEnemys": 7,
+  "CraversedCells": 1139,
+  "KicksForEnemys": 63,
+  "KicksForPlayer": 47,
+  "UsedFoods": 5,
+  "UsedElixirs": 1,
+  "UsedScrolls": 4
+ },
+ {
+  "Treasures": 5,
+  "CompletetLevels": 1,
+  "KilledEnemys": 5,
+  "CraversedCells": 721,
+  "KicksForEnemys": 51,
+  "KicksForPlayer": 37,
+  "UsedFoods": 5,
+  "UsedElixirs": 0,
+  "UsedScrolls": 4
+ },
+ {
+  "Treasures": 5,
+  "CompletetLevels": 1,
+  "KilledEnemys": 5,
+  "CraversedCells": 740,
+  "KicksForEnemys": 51,
+  "KicksForPlayer": 37,
+  "UsedFoods": 5,
+  "UsedElixirs": 0,
+  "UsedScrolls": 4
+ },
+ {
+  "Treasures": 4,
+  "CompletetLevels": 3,
+  "KilledEnemys": 4,
+  "CraversedCells": 802,
+  "KicksForEnemys": 12,
+  "KicksForPlayer": 17,
+  "UsedFoods": 0,
+  "UsedElixirs": 0,
+  "UsedScrolls": 0
+ }
+]
